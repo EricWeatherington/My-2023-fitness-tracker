@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>My Hub</title>
 </head>
 <body>
+    <h1>Eric Weatherington's Hub</h1>
     
+    <!-- Weather API -->
+    
+    <div class="card">
+        <div class="search">
+            <input id="cityInput" type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="images/search.png" alt=""></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">50deg F</h1>
+            <h2 class="city">Louisville</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">5 mph</p>
+                        <p>Wind Speed</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Todo list -->
+
+    <div class="todo-container">
+        <div class="todo-app">
+            <h2>To-Do List <img src= "images/icon.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class= "marked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
