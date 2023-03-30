@@ -13,6 +13,8 @@
     <!-- Weather API -->
     
     <div class="card">
+        <h2>Weather Forecast</h2>
+    
         <div class="search">
             <input id="cityInput" type="text" placeholder="enter city name" spellcheck="false">
             <button><img src="images/search.png" alt=""></button>
@@ -110,6 +112,66 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <!-- random meal generator -->
+
+    <div class="random-container">
+        <div class="foodContent">
+            <h2>What to eat?!?</h2>
+            <button id="randomBtn">Random</button>
+            <p id="output">Result</p>
+            
+        </div>
+    </div>
+
+    <!-- Workout tracking app -->
+
+    <div id="workout">
+        <!-- <table class="workout-tracker">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Workout</th>
+                    <th>Duration</th>
+                    <th></th>
+                </tr>
+            </thead>
+                    <tbody class="entries">
+                        <tr class="tracker-row">
+                            <td>
+                                <input type="date" class="tracker-date">
+                            </td>
+                            <td>
+                                <select class="workout-types">
+                                    <option value="jogging">Jogging</option>
+                                    <option value="walking">Walking</option>
+                                    <option value="basketball">Basketball</option>
+                                    <option value="weight-training">Weight Training</option>
+                                    <option value="yoga">Yoga</option>
+                                    <option value="golf">Golf</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="number" class="track-duration">
+                                <span class="track-text">minutes</span>
+                            </td>
+                            <td>
+                                <button type="button" class="track-button">&times;</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr class="tracker-row tracker-row-add">
+                            <td colspan="4">
+                                <button class="tracker-add">Add Entry &plus;</button>
+                            </td>
+
+                        </tr>
+                    </tbody> 
+        </table> -->
+
+       
+    </div>
+
+    <script src="index.js" type="module"></script>
 </body>
 </html>

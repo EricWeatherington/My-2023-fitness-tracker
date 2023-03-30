@@ -16,6 +16,10 @@
 // })
 
 // Weather api section
+//Workout Tracker
+
+
+
 const apiKey = "0c707a7dd73e32c0eff98fa433cb6ccd";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
 
@@ -150,3 +154,28 @@ var x = setInterval(function() {
         }
 
 }, 1000);
+
+// Budget app
+
+// Random food Generator
+
+let btnRandom = document.getElementById('randomBtn');
+let randomResult = document.getElementById('output');
+let foodOptions = ['Chinese', 'Indian', 'Thai', 'Greek', 'Japanese', 'Korean', 'BBQ', 'Chicken', 'Burgers', 'Buy groceries and cook'];
+
+btnRandom.addEventListener('click', () => {
+   let randomFood = foodOptions[Math.floor(Math.random() * foodOptions.length)]
+    randomResult.innerHTML = randomFood
+
+});
+
+
+//Workout App
+
+import WorkoutTracker from "./WorkoutTracker.js";
+
+const appwork = document.getElementById("workout");
+
+const wt = new WorkoutTracker(appwork);
+
+window.wt = wt;

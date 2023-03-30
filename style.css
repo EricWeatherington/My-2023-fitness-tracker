@@ -1,13 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     box-sizing: border-box;
 }
 
-
+body {
+  background-image: url("images/background.jpg"); 
+}
 
 .card {
-  width: 80%;
+  width: 60%;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color:#fff;
   margin: 100px auto 0;
@@ -22,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .search input {
@@ -118,11 +121,13 @@
 /* To do section */
 
 .todo-container {
-  width: 100%;
+  width: 60%;
   min-height: 50vh;
   background: linear-gradient(135deg, #153677, #4e085f);
   padding: 10px; 
-
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .todo-app {
@@ -180,6 +185,10 @@ button {
 
 }
 
+button:hover {
+  background: rgba(0,0,0,0.1);
+}
+
 ul li {
   list-style: none;
   font-size: 17px;
@@ -230,13 +239,13 @@ ul li span:hover{
 /* Countdown Timer */
 
 .countdown-container{
-  width: 100%;
+  width: 60%;
   height: 50vh;
   background: #34568b;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  margin-bottom: 50px;
 
 }
 
@@ -246,9 +255,7 @@ ul li span:hover{
   margin: 15px;
 }
 
-.countdown-time div {
-  flex-basis: 100px;
-}
+
 
 .countdown-time div p {
   font-size: 40px;
@@ -264,6 +271,7 @@ ul li span:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .budget-content {
@@ -288,5 +296,86 @@ svg circle {
   stroke-dasharray: 110;
 
 
+}
+
+
+/* Random Foods */
+
+.random-container {
+  width: 60%;
+  height: 50vh;
+ 
+}
+
+.foodContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 20vh;
+  background: #3484b3;
+
+}
+
+/* Workout Tracker */
+
+.workout-tracker {
+  font-size: 14px;
+  border-collapse: collapse;
+  width: 600px;
+}
+
+.workout-tracker th {
+  font-size: 1.15em;
+  text-align: left;
+  font-weight: normal;
+  color: white;
+  background: #009578;
+}
+
+.workout-tracker th, .workout-tracker td {
+  padding: 0.75em;
+
+}
+
+.entries .tracker-row {
+  background: #eee;
+}
+
+.entries .tracker-row::nth-child(odd) {
+  background: #ddd;
+}
+
+.tracker-date,
+.track-duration,
+.workout-types {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 1em;
+  height: 2.5em;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.track-duration {
+  width: 5em;
+  text-align: right;
+}
+
+.tracker-row-add {
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  background: #fff;
+
+}
+
+.tracker-row-add td {
+  text-align: right;
+}
+
+.tracker-add {
+  display: inline-block;
+  padding: 0.8em 1em;
 }
 
