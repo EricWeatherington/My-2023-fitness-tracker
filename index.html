@@ -8,12 +8,12 @@
     <title>My Hub</title>
 </head>
 <body>
-    <h1>Eric Weatherington's Hub</h1>
+    <h1>My fitness Hub</h1>
     
     <!-- Weather API -->
     
     <div class="card">
-        <h2>Weather Forecast</h2>
+        <h3>Today's Weather Forecast</h3>
     
         <div class="search">
             <input id="cityInput" type="text" placeholder="enter city name" spellcheck="false">
@@ -33,7 +33,7 @@
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
-                </div>
+                </div> 
                 <div class="col">
                     <img src="images/wind.png">
                     <div>
@@ -44,16 +44,16 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 
     <!-- Todo list -->
 
     <div class="todo-container">
         <div class="todo-app">
-            <h2>2023 Goals list <img src= "images/icon.png"></h2>
+            <h2>2023 Fitness/Personal Goals <img src= "images/icon.png"></h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add your text">
-                <button onclick="addTask()">Add</button>
+                <button id="taskBtn">Add</button>
             </div>
             <ul id="list-container">
                 <!-- <li class= "marked">Task 1</li>
@@ -92,28 +92,8 @@
         </div>
     </div>
 
-    <!-- Budget App -->
-
-    <div class="budget-container">
-        <div class="budget-content">
-            <h2>Coffee, food, recreation Spending Budget</h2>
-            <div class="spending">
-                <h4>Total Spent this month</h4>
-                <h5>$300</h5>
-            </div>
-            <div class="progress">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="40" cy="40" r="30"/>
-                </svg>
-            <div class="number">
-                <p>50%</p>
-            </div>
-            </div>
-        </div>
-    </div>
-
     <!-- random meal generator -->
-
+    
     <div class="random-container">
         <div class="foodContent">
             <h2>What to eat?!?</h2>
@@ -124,7 +104,7 @@
     </div>
 
     <!-- Workout tracking app -->
-
+    <h3>Workout Log</h3>
     <div id="workout">
         <!-- <table class="workout-tracker">
             <thead>
@@ -173,5 +153,6 @@
     </div>
 
     <script src="index.js" type="module"></script>
+    <script src="index.js"></script>
 </body>
 </html>

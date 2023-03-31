@@ -9,7 +9,7 @@ body {
 }
 
 .card {
-  width: 60%;
+  width: 100%;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color:#fff;
   margin: 100px auto 0;
@@ -121,9 +121,9 @@ body {
 /* To do section */
 
 .todo-container {
-  width: 60%;
+  width: 100%;
   min-height: 50vh;
-  background: linear-gradient(135deg, #153677, #4e085f);
+  background: #353535;
   padding: 10px; 
   display: flex;
   justify-content: center;
@@ -239,9 +239,9 @@ ul li span:hover{
 /* Countdown Timer */
 
 .countdown-container{
-  width: 60%;
+  width: 100%;
   height: 50vh;
-  background: #34568b;
+  background: #d9d9d9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,44 +265,11 @@ ul li span:hover{
 }
 
 
-/* Budget */
-
-.budget-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.budget-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-svg{
-
-  height: 15rem;
-  width: 15rem;
-}
-
-svg circle {
-  fill: none;
-  color: #00feba;
-  stroke: #00feba;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-dasharray: 110;
-
-
-}
-
 
 /* Random Foods */
 
 .random-container {
-  width: 60%;
+  width: 100%;
   height: 50vh;
  
 }
@@ -313,7 +280,7 @@ svg circle {
   align-items: center;
   flex-direction: column;
   height: 20vh;
-  background: #3484b3;
+  background: #3c6e71;
 
 }
 
@@ -322,7 +289,7 @@ svg circle {
 .workout-tracker {
   font-size: 14px;
   border-collapse: collapse;
-  width: 600px;
+  width: 100%;
 }
 
 .workout-tracker th {
@@ -330,7 +297,7 @@ svg circle {
   text-align: left;
   font-weight: normal;
   color: white;
-  background: #009578;
+  background: #284b63;
 }
 
 .workout-tracker th, .workout-tracker td {

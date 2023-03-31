@@ -17,7 +17,15 @@
 
 // Weather api section
 //Workout Tracker
+//Workout App
 
+import WorkoutTracker from "./WorkoutTracker.js";
+
+const appwork = document.getElementById("workout");
+
+const wt = new WorkoutTracker(appwork);
+
+// window.wt = wt;
 
 
 const apiKey = "0c707a7dd73e32c0eff98fa433cb6ccd";
@@ -26,9 +34,6 @@ const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
-
-
-
 
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -84,13 +89,14 @@ function showCity() {
 showCity();
 
 
-// JS for to-do list
+// JS for fitness goals/personal goals
 
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
+const taskButton = document.getElementById("taskBtn");
 
-function addTask(){
-    if(inputBox.value === ''){
+taskButton.addEventListener("click", () => {
+    if(inputBox.value === '') {
         alert("No task has been entered");
     }
     else {
@@ -103,7 +109,26 @@ function addTask(){
     }
     inputBox.value = "";
     saveData();
-}
+})
+
+
+
+// function addTask(){
+//     if(inputBox.value === ''){
+//         alert("No task has been entered");
+//     }
+//     else {
+//         let li = document.createElement("li");
+//         li.innerHTML = inputBox.value;
+//         listContainer.appendChild(li);
+//         let span = document.createElement("span");
+//         span.innerHTML = "\u00d7";
+//         li.appendChild(span);
+//     }
+//     inputBox.value = "";
+//     saveData();
+// }
+
 
 listContainer.addEventListener("click", function(e) {
     if(e.target.tagName === "LI") {
@@ -155,8 +180,6 @@ var x = setInterval(function() {
 
 }, 1000);
 
-// Budget app
-
 // Random food Generator
 
 let btnRandom = document.getElementById('randomBtn');
@@ -170,12 +193,3 @@ btnRandom.addEventListener('click', () => {
 });
 
 
-//Workout App
-
-import WorkoutTracker from "./WorkoutTracker.js";
-
-const appwork = document.getElementById("workout");
-
-const wt = new WorkoutTracker(appwork);
-
-window.wt = wt;

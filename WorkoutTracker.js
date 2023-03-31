@@ -15,7 +15,7 @@ export default class WorkoutTracker {
         
             this.addEntry({
                 date: `${year}-${month}-${day}`,
-                workout: "walking",
+                workout: "",
                 duration: 0
             });
         })
@@ -36,7 +36,7 @@ export default class WorkoutTracker {
                 <tbody>
                     <tr class="tracker-row tracker-row-add">
                         <td colspan="4">
-                            <button class="tracker-add">Add Entry &plus;</span>
+                            <button class="tracker-add">Add New Entry &plus;</span>
                         </td>
                     </tr>
                 </tbody>
@@ -136,3 +136,5 @@ export default class WorkoutTracker {
         this.updateView();
     }
 }
+
+
