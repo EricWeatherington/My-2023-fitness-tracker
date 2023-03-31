@@ -6,18 +6,16 @@ This app is simple to use, with a lot of engagement features.  The workout track
 
 From the list of required features to include, I chose the following: 
 
-1.  Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.  
+- Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.  
       - You will be able to see this feature being implemented in my "random cheat meal generator"
 
-2.  Calculate and display databased on an external factor (ex: get the current date, and display how many days remaining until some event).
+- Calculate and display databased on an external factor (ex: get the current date, and display how many days remaining until some event).
       - I decided to make a countdown for the new year!  A reminder that time goes quickly, and I need to make efficient use of my time.
  
-3.  Retrieve data from a third-party API and use it to display something within your app.
+- Retrieve data from a third-party API and use it to display something within your app.
       - Using an API key from Open Weather Map, you will be able to see the daily forecast for any city you desire.
 
-4.  Visualize data in a user friendly way. (e.g. graph, chart, etc)
+- Visualize data in a user friendly way. (e.g. graph, chart, etc)
       - I used a table for my workout tracker that will save your inputs to Local Storage.  
-
-
 
 Thanks for stopping by!
