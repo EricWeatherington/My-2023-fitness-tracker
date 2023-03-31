@@ -8,8 +8,10 @@
     <title>My Hub</title>
 </head>
 <body>
-    <h1>My fitness Hub</h1>
+<h1 class="#home">Fitness Tracker - 2023</h1>
+    <p>Apps to help me accomplish the the fitness goals I have decided to go for in 2023!</p>
     
+
     <!-- Weather API -->
     
     <div class="card">
@@ -24,8 +26,8 @@
         </div>
         <div class="weather">
             <img src="images/rain.png" class="weather-icon">
-            <h1 class="temp">50deg F</h1>
-            <h2 class="city">Louisville</h2>
+            <h1 class="temp"> Temp</h1>
+            <h2 class="city">Please Search above</h2>
             <div class="details">
                 <div class="col">
                     <img src="images/humidity.png">
@@ -44,68 +46,12 @@
                 </div>
             </div>
         </div>
-    </div>  
-
-    <!-- Todo list -->
-
-    <div class="todo-container">
-        <div class="todo-app">
-            <h2>2023 Fitness/Personal Goals <img src= "images/icon.png"></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button id="taskBtn">Add</button>
-            </div>
-            <ul id="list-container">
-                <!-- <li class= "marked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li> -->
-
-            </ul>
-        </div>
-    </div>
-
-    <!--Date Countdowns -->
-
-    <div class="countdown-container">
-        <div class="countdown-content">
-            <h2 id="newYearMessage">Countdown for new year!</h2>
-            <div class="countdown-time">
-                <div>
-                    <p id="days">00</p>
-                    <span>Days</span>
-                </div>
-                <div>
-                    <p id="hours">00</p>
-                    <span>Hours</span>
-                </div>
-                <div>
-                    <p id="minutes">00</p>
-                    <span>Minutes</span>
-                </div>
-                <div>
-                    <p id="seconds">00</p>
-                    <span>Seconds</span>
-                </div>
-                
-            </div>
-            <p>"Lost time is never found again." - Benjamin Franklin</p>
-        </div>
-    </div>
-
-    <!-- random meal generator -->
     
-    <div class="random-container">
-        <div class="foodContent">
-            <h2>What to eat?!?</h2>
-            <button id="randomBtn">Random</button>
-            <p id="output">Result</p>
-            
-        </div>
-    </div>
+
 
     <!-- Workout tracking app -->
-    <h3>Workout Log</h3>
-    <div id="workout">
+    <h3 class="workoutHeader">Workout Log</h3>
+    <div id="workout" class="workout">
         <!-- <table class="workout-tracker">
             <thead>
                 <tr>
@@ -148,11 +94,74 @@
                         </tr>
                     </tbody> 
         </table> -->
+        <div class="todo-container">
+            <div class="todo-app">
+                <h2>2023 Fitness/Personal Goals <img src= "images/icon.png"></h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <button id="taskBtn">Add</button>
+                </div>
+                <ul id="list-container">
+                    <!-- <li class= "marked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+    
+                </ul>
+            </div>
+        </div>
 
-       
+
+         <!--Date Countdowns -->
+ <div class="wrapper">
+    <div class="countdown-container">
+        <div class="countdown-content">
+            <h2 id="newYearMessage">Countdown for new year!</h2>
+            <div class="countdown-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+                
+            </div>
+            <p>"Lost time is never found again." - Benjamin Franklin</p>
+        </div>
     </div>
 
+
+
+  
+
+   
+
+    <!-- random meal generator -->
+    
+    <div class="random-container">
+        <div class="foodContent">
+            <h2>Cheat meal generator</h2>
+            <button id="randomBtn">Click me!</button>
+            <p id="output">Your answer awaits!</p>
+            
+        </div>
+    </div>
+
+    
+       
+</div>
+
+<section class="footer"><p>Created by Eric Weatherington</p></section>
+
     <script src="index.js" type="module"></script>
-    <script src="index.js"></script>
 </body>
 </html>

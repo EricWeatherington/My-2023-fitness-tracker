@@ -184,7 +184,7 @@ var x = setInterval(function() {
 
 let btnRandom = document.getElementById('randomBtn');
 let randomResult = document.getElementById('output');
-let foodOptions = ['Chinese', 'Indian', 'Thai', 'Greek', 'Japanese', 'Korean', 'BBQ', 'Chicken', 'Burgers', 'Buy groceries and cook'];
+let foodOptions = ['Chinese', 'Indian', 'Thai', 'Greek', 'Japanese', 'Korean', 'BBQ', 'Fried Chicken', 'Burgers'];
 
 btnRandom.addEventListener('click', () => {
    let randomFood = foodOptions[Math.floor(Math.random() * foodOptions.length)]
