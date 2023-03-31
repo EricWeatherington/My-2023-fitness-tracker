@@ -21,23 +21,33 @@ body {
   
 }
 
+.navBar {
+  background: #ddd;
+  border: 8px solid;
+  padding: 1rem;
+  border-image: linear-gradient(45deg, #49a078, #3c6e71) 1;
+
+}
+
 h1, h2, h3, h4 {
   color: #1f2421;
 }
 
 .workoutHeader {
   margin-top: 30px;
+  text-align: center;
 }
 
 .card {
   width: 100%;
-  background: linear-gradient(135deg, #00feba, #5b548a);
+  background-color: #6a93cb;
+  background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);;
   color:#fff;
   border-radius: 20px;
   padding: 40px 35px;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .search {
@@ -150,6 +160,7 @@ h1, h2, h3, h4 {
   justify-content: center;
   margin-bottom: 20px;
   margin-top: 30px;
+  border-radius: 20px;
 }
 
 .todo-app {
@@ -269,6 +280,7 @@ ul li span:hover{
   align-items: center;
   justify-content: center;
   color: #264653;
+  border-radius: 20px;
 
 }
 
@@ -299,7 +311,7 @@ ul li span:hover{
 .random-container {
   width: 100%;
   margin-bottom: 15px;
- 
+  border-radius: 20px;
 }
 
 .foodContent {
@@ -309,7 +321,14 @@ ul li span:hover{
   flex-direction: column;
   height: 20vh;
   background: #3c6e71;
+  border-radius: 20px;
 
+}
+
+#output {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 /* Workout Tracker */
@@ -388,7 +407,7 @@ ul li span:hover{
 @media screen and (min-width: 960px) {
   
   .workout-tracker { 
-    margin-top: 70px;
+    margin-top: 20px;
     
   }
   
