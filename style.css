@@ -281,7 +281,7 @@ ul li span:hover{
   justify-content: center;
   color: #264653;
   border-radius: 20px;
-
+  
 }
 
 .countdown-time {
@@ -289,6 +289,10 @@ ul li span:hover{
   padding: 10px;
   margin: 15px;
   background: #fff;
+}
+
+#newYearMessage {
+  text-align: center;
 }
 
 

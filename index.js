@@ -1,23 +1,8 @@
-// const express = require("express")
-// const app = express();
-// const port = 4000;
-// const cors = require("cors");
-
-// app.use(express.urlencoded({extended: true}));
-// app.use(express.json());
-// app.use(cors());
-
-// app.get("/", cors(), async (req, res) => {
-//     res.send("This is working")
-// });
-
-// app.listen(port, () => {
-//     console.log(`Listening at http://localhost:${port}`)
-// })
-
 // Weather api section
 //Workout Tracker
 //Workout App
+
+// importing class from WorkoutTracker JS file
 
 import WorkoutTracker from "./WorkoutTracker.js";
 
@@ -25,9 +10,8 @@ const appwork = document.getElementById("workout");
 
 const wt = new WorkoutTracker(appwork);
 
-// window.wt = wt;
 
-
+// API Key
 const apiKey = "0c707a7dd73e32c0eff98fa433cb6ccd";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=";
 
